@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Number Guess Game</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="icon" type="image/x-icon" href="Guess Favicon.png">
+</head>
+<body>
+    <div id="startMenu">
+        <h1>Number Guess Game</h1>
+        <h2>Guess a Number from 1 to 100!</h3>
+        <button id="startButton" class="button">Start</button>
+    </div>
+
+    <div id="game">
+        <h1>Guess Your Number:</h1>
+        <form id="myForm">
+            <input id="userInputNum" type="number" pattern="^[1-9]$|^[1-9][0-9]$|^(100)$">
+            <br>
+            <input id="userNumSubmit" type="submit" value="Guess!" class="button">
+        </form>
+
+        <br><br>
+        <div><h3>Too High: </h3><p id="highNumList"></p</div>
+        <br><br>
+        <div><h3>Too Low: </h3><p id="lowNumList"></p</div>
+        <br><br>
+        <div><h2>Your Guesses:</h2><p></p></div>
+    </div>
+
+    <script src='main.js'></script>
+</body>
+</html>
